@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="RecentSearchCell" rowHeight="63" id="KGk-i7-Jjw" customClass="RecentSearchCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS4-Md-WzO" userLabel="Date label">
+                        <rect key="frame" x="20" y="2" width="100" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Oou-ud-i2C"/>
+                            <constraint firstAttribute="height" constant="15" id="nOI-qg-kQD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oM8-KC-4DD" userLabel="Question Label">
+                        <rect key="frame" x="20" y="17" width="287" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlQ-50-BYZ" userLabel="Location Label">
+                        <rect key="frame" x="20" y="43" width="292" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="wWI-V1-L2H"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AlQ-50-BYZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="8ay-e1-e2x"/>
+                    <constraint firstItem="oM8-KC-4DD" firstAttribute="top" secondItem="oS4-Md-WzO" secondAttribute="bottom" id="Eid-KV-a22"/>
+                    <constraint firstItem="oM8-KC-4DD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="Joc-gl-cCS"/>
+                    <constraint firstItem="AlQ-50-BYZ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Orx-En-2Kv"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="AlQ-50-BYZ" secondAttribute="bottom" constant="-4" id="XXl-za-Yz4"/>
+                    <constraint firstItem="oS4-Md-WzO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="Yjc-wm-RIh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oM8-KC-4DD" secondAttribute="trailing" constant="12" id="bH5-Nw-bop"/>
+                    <constraint firstItem="oS4-Md-WzO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-6" id="tlT-ub-tGk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblDate" destination="oS4-Md-WzO" id="3bH-93-5Wz"/>
+                <outlet property="lblLocation" destination="AlQ-50-BYZ" id="eUS-Ic-Qsf"/>
+                <outlet property="lblQuestion" destination="oM8-KC-4DD" id="pxB-FP-sbM"/>
+            </connections>
+            <point key="canvasLocation" x="461" y="378.5"/>
+        </tableViewCell>
+    </objects>
+</document>

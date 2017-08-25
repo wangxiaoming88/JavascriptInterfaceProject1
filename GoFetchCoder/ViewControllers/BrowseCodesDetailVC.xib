@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BrowseCodesDetailVC">
+            <connections>
+                <outlet property="btnBookmark" destination="dQV-ur-XXW" id="kwr-Nd-1vr"/>
+                <outlet property="btnClarify" destination="x5T-on-Tga" id="4Uq-tp-fcs"/>
+                <outlet property="btnShare" destination="48E-KI-aoQ" id="4Cx-IJ-Zb0"/>
+                <outlet property="view" destination="S1Y-ef-wtS" id="QLE-2V-CXR"/>
+                <outlet property="webView" destination="KPr-dQ-me8" id="MlE-Ly-kOc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="S1Y-ef-wtS">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4W-Tu-Qis" userLabel="Footer Seperator">
+                    <rect key="frame" x="0.0" y="600" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.60426170830000003" green="0.64567383290000002" blue="0.69553285259999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BGB-Cb-byk"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdS-EL-wMu" userLabel="Footer view">
+                    <rect key="frame" x="0.0" y="601" width="375" height="66"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48E-KI-aoQ" userLabel="Share Button">
+                            <rect key="frame" x="285" y="8" width="80" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="mcV-QZ-L5k"/>
+                                <constraint firstAttribute="height" constant="50" id="ver-aW-1VU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="Share">
+                                <color key="titleColor" red="0.44705882349999998" green="0.49019607840000001" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnShareAction:" destination="-1" eventType="touchUpInside" id="DRP-FZ-lwK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQV-ur-XXW" userLabel="Bookmark Button">
+                            <rect key="frame" x="10" y="8" width="80" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Ide-eR-VNi"/>
+                                <constraint firstAttribute="width" constant="80" id="vOP-4U-tlY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="Bookmark">
+                                <color key="titleColor" red="0.44705882349999998" green="0.49019607840000001" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnBookmarkAction:" destination="-1" eventType="touchUpInside" id="dTT-N8-BgT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5T-on-Tga" userLabel="Clarify Button">
+                            <rect key="frame" x="147" y="8" width="80" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="YG7-1T-d7F"/>
+                                <constraint firstAttribute="width" constant="80" id="zfD-kt-AaB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="Clarify">
+                                <color key="titleColor" red="0.44705882349999998" green="0.49019607840000001" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClarifyAction:" destination="-1" eventType="touchUpInside" id="hI2-mt-ovg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="597-T8-aXK"/>
+                        <constraint firstItem="x5T-on-Tga" firstAttribute="centerX" secondItem="AdS-EL-wMu" secondAttribute="centerX" id="Fgg-Lu-Cab"/>
+                        <constraint firstItem="dQV-ur-XXW" firstAttribute="top" secondItem="AdS-EL-wMu" secondAttribute="top" constant="8" id="HMd-Xq-bhV"/>
+                        <constraint firstAttribute="trailing" secondItem="48E-KI-aoQ" secondAttribute="trailing" constant="10" id="dR5-R9-FDt"/>
+                        <constraint firstItem="x5T-on-Tga" firstAttribute="centerY" secondItem="AdS-EL-wMu" secondAttribute="centerY" id="g7h-dE-DJd"/>
+                        <constraint firstItem="dQV-ur-XXW" firstAttribute="leading" secondItem="AdS-EL-wMu" secondAttribute="leading" constant="10" id="j1X-Xh-Rvv"/>
+                        <constraint firstItem="48E-KI-aoQ" firstAttribute="top" secondItem="AdS-EL-wMu" secondAttribute="top" constant="8" id="tqw-gk-HKh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0X-Kl-bHu" userLabel="Top Separator">
+                    <rect key="frame" x="0.0" y="46" width="375" height="2"/>
+                    <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="b5c-TP-orh"/>
+                    </constraints>
+                </view>
+                <webView contentMode="scaleToFill" paginationMode="topToBottom" translatesAutoresizingMaskIntoConstraints="NO" id="KPr-dQ-me8">
+                    <rect key="frame" x="0.0" y="48" width="375" height="552"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                </webView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="yW0-lY-k5k">
+                    <rect key="frame" x="169" y="315" width="37" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="Mtc-UM-y7I"/>
+                        <constraint firstAttribute="width" constant="37" id="dSy-8h-2Ea"/>
+                    </constraints>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="AdS-EL-wMu" secondAttribute="bottom" id="47m-eE-R2I"/>
+                <constraint firstItem="KPr-dQ-me8" firstAttribute="leading" secondItem="S1Y-ef-wtS" secondAttribute="leading" id="4pI-Bs-h1t"/>
+                <constraint firstAttribute="trailing" secondItem="KPr-dQ-me8" secondAttribute="trailing" id="6YI-nC-9K7"/>
+                <constraint firstAttribute="trailing" secondItem="A0X-Kl-bHu" secondAttribute="trailing" id="BZv-fd-dEx"/>
+                <constraint firstItem="X4W-Tu-Qis" firstAttribute="leading" secondItem="S1Y-ef-wtS" secondAttribute="leading" id="DIK-al-zU6"/>
+                <constraint firstAttribute="trailing" secondItem="AdS-EL-wMu" secondAttribute="trailing" id="Mgk-Cx-J1f"/>
+                <constraint firstAttribute="trailing" secondItem="X4W-Tu-Qis" secondAttribute="trailing" id="OdL-qA-VAp"/>
+                <constraint firstItem="X4W-Tu-Qis" firstAttribute="top" secondItem="KPr-dQ-me8" secondAttribute="bottom" id="VQt-8g-tFt"/>
+                <constraint firstItem="AdS-EL-wMu" firstAttribute="top" secondItem="X4W-Tu-Qis" secondAttribute="bottom" id="Y0R-bW-Rn7"/>
+                <constraint firstItem="KPr-dQ-me8" firstAttribute="top" secondItem="S1Y-ef-wtS" secondAttribute="top" constant="48" id="Yu6-j2-BeU"/>
+                <constraint firstItem="A0X-Kl-bHu" firstAttribute="top" secondItem="S1Y-ef-wtS" secondAttribute="top" constant="46" id="cd6-CV-MMk"/>
+                <constraint firstItem="yW0-lY-k5k" firstAttribute="centerY" secondItem="S1Y-ef-wtS" secondAttribute="centerY" id="hn7-DQ-Ieg"/>
+                <constraint firstItem="AdS-EL-wMu" firstAttribute="leading" secondItem="S1Y-ef-wtS" secondAttribute="leading" id="lwg-ee-c1G"/>
+                <constraint firstItem="yW0-lY-k5k" firstAttribute="centerX" secondItem="S1Y-ef-wtS" secondAttribute="centerX" id="qOw-xh-UAO"/>
+                <constraint firstItem="A0X-Kl-bHu" firstAttribute="leading" secondItem="S1Y-ef-wtS" secondAttribute="leading" id="uOS-Ph-bGE"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="417.5" y="359.5"/>
+        </view>
+    </objects>
+</document>

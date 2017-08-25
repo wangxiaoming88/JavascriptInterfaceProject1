@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </mutableArray>
+        <mutableArray key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </mutableArray>
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="99" id="P7A-YQ-Flv" customClass="CustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="176"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P7A-YQ-Flv" id="dkv-Vf-YxK">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vd-kV-S9f">
+                        <rect key="frame" x="10" y="10" width="363" height="17"/>
+                        <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="14"/>
+                        <color key="textColor" red="0.070588235294117646" green="0.21568627450980393" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="AnswerText" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBr-bw-bQI">
+                        <rect key="frame" x="10" y="58" width="363" height="107"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="108" id="lxV-Y0-haQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <color key="textColor" red="0.070588235294117646" green="0.21568627450980393" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lxV-Y0-haQ"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="obx-6q-h9n" userLabel="SeparatorView">
+                        <rect key="frame" x="0.0" y="175" width="383" height="1"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="IdY-ho-wvU"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Best match" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtB-rV-cBO">
+                        <rect key="frame" x="8" y="32" width="365" height="16"/>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
+                        <color key="textColor" red="0.16078431372549018" green="0.72156862745098038" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="fBr-bw-bQI" secondAttribute="bottom" constant="2.5" id="47h-yR-Wu0"/>
+                    <constraint firstAttribute="bottom" secondItem="obx-6q-h9n" secondAttribute="bottom" id="770-eK-PLQ"/>
+                    <constraint firstItem="AtB-rV-cBO" firstAttribute="leading" secondItem="dkv-Vf-YxK" secondAttribute="leading" constant="8" id="Aew-7x-IuG"/>
+                    <constraint firstItem="0vd-kV-S9f" firstAttribute="top" secondItem="dkv-Vf-YxK" secondAttribute="top" constant="10" id="Ate-41-bWl"/>
+                    <constraint firstItem="AtB-rV-cBO" firstAttribute="top" secondItem="0vd-kV-S9f" secondAttribute="bottom" constant="5" id="Dq9-cV-2Sc"/>
+                    <constraint firstItem="fBr-bw-bQI" firstAttribute="leading" secondItem="dkv-Vf-YxK" secondAttribute="leading" constant="10" id="Mqu-NR-eMV"/>
+                    <constraint firstItem="0vd-kV-S9f" firstAttribute="leading" secondItem="dkv-Vf-YxK" secondAttribute="leading" constant="10" id="NUI-zN-M3t"/>
+                    <constraint firstAttribute="trailing" secondItem="fBr-bw-bQI" secondAttribute="trailing" constant="10" id="VuS-rY-Hdj"/>
+                    <constraint firstItem="fBr-bw-bQI" firstAttribute="top" secondItem="AtB-rV-cBO" secondAttribute="bottom" constant="10" id="ZXr-Kh-fFk"/>
+                    <constraint firstAttribute="trailing" secondItem="0vd-kV-S9f" secondAttribute="trailing" constant="10" id="fCg-cB-KFD"/>
+                    <constraint firstAttribute="trailing" secondItem="AtB-rV-cBO" secondAttribute="trailing" constant="10" id="gV5-wG-wF6"/>
+                    <constraint firstItem="obx-6q-h9n" firstAttribute="leading" secondItem="dkv-Vf-YxK" secondAttribute="leading" id="iQP-HD-C75"/>
+                    <constraint firstAttribute="trailing" secondItem="obx-6q-h9n" secondAttribute="trailing" id="vTO-eU-5OF"/>
+                    <constraint firstAttribute="bottom" secondItem="fBr-bw-bQI" secondAttribute="bottom" constant="10" id="wH0-EF-80E"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="wH0-EF-80E"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelAnswer" destination="fBr-bw-bQI" id="cgf-JB-FmB"/>
+                <outlet property="labelBestMatch" destination="AtB-rV-cBO" id="BmE-2y-5lS"/>
+                <outlet property="labelSectionNumber" destination="0vd-kV-S9f" id="Mb8-oh-7eZ"/>
+            </connections>
+            <point key="canvasLocation" x="80.5" y="278"/>
+        </tableViewCell>
+    </objects>
+</document>

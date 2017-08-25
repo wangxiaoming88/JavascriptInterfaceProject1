@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BrowseCodesVC">
+            <connections>
+                <outlet property="table" destination="z5A-7m-d2L" id="LD4-HJ-6JA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X1E-U1-vxk" userLabel="Base View">
+                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxz-8O-txV" userLabel="Top Separator">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="2"/>
+                            <color key="backgroundColor" red="0.16862745100000001" green="0.76078431369999999" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="Zsy-Ev-1Ji"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="z5A-7m-d2L">
+                            <rect key="frame" x="0.0" y="2" width="320" height="522"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="H5O-hs-K4t"/>
+                                <outlet property="delegate" destination="-1" id="Rge-PT-klo"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="z5A-7m-d2L" secondAttribute="trailing" id="3Rs-dJ-dgU"/>
+                        <constraint firstAttribute="bottom" secondItem="z5A-7m-d2L" secondAttribute="bottom" id="42f-BW-Wem"/>
+                        <constraint firstItem="z5A-7m-d2L" firstAttribute="leading" secondItem="X1E-U1-vxk" secondAttribute="leading" id="6Ou-mD-TYd"/>
+                        <constraint firstItem="z5A-7m-d2L" firstAttribute="top" secondItem="jxz-8O-txV" secondAttribute="bottom" id="Asc-9c-ABM"/>
+                        <constraint firstItem="jxz-8O-txV" firstAttribute="top" secondItem="X1E-U1-vxk" secondAttribute="top" id="D0u-YN-5Sy"/>
+                        <constraint firstItem="jxz-8O-txV" firstAttribute="leading" secondItem="X1E-U1-vxk" secondAttribute="leading" id="Odu-zx-hbd"/>
+                        <constraint firstItem="z5A-7m-d2L" firstAttribute="top" secondItem="X1E-U1-vxk" secondAttribute="top" constant="2" id="OqU-Yp-v4S"/>
+                        <constraint firstAttribute="bottom" secondItem="z5A-7m-d2L" secondAttribute="bottom" id="YxF-sS-oUU"/>
+                        <constraint firstAttribute="trailing" secondItem="z5A-7m-d2L" secondAttribute="trailing" id="hYd-H8-34P"/>
+                        <constraint firstAttribute="trailing" secondItem="z5A-7m-d2L" secondAttribute="trailing" id="jjp-Ru-Gjm"/>
+                        <constraint firstItem="z5A-7m-d2L" firstAttribute="leading" secondItem="X1E-U1-vxk" secondAttribute="leading" id="nzd-A6-iRm"/>
+                        <constraint firstItem="z5A-7m-d2L" firstAttribute="leading" secondItem="X1E-U1-vxk" secondAttribute="leading" id="qvu-yD-DXp"/>
+                        <constraint firstAttribute="trailing" secondItem="jxz-8O-txV" secondAttribute="trailing" id="xeE-zD-emm"/>
+                        <constraint firstAttribute="bottom" secondItem="z5A-7m-d2L" secondAttribute="bottom" id="zSN-OP-aFU"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="42f-BW-Wem"/>
+                            <exclude reference="6Ou-mD-TYd"/>
+                            <exclude reference="OqU-Yp-v4S"/>
+                            <exclude reference="YxF-sS-oUU"/>
+                            <exclude reference="hYd-H8-34P"/>
+                            <exclude reference="jjp-Ru-Gjm"/>
+                            <exclude reference="nzd-A6-iRm"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="X1E-U1-vxk" secondAttribute="bottom" id="MCK-dm-mKq"/>
+                <constraint firstAttribute="trailing" secondItem="X1E-U1-vxk" secondAttribute="trailing" id="hhp-Nj-bJE"/>
+                <constraint firstItem="X1E-U1-vxk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="nTA-6j-192"/>
+                <constraint firstItem="X1E-U1-vxk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="q07-5Y-tnj"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

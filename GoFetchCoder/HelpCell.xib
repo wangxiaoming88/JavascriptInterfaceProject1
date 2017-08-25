@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="HelpCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="314-Pu-XHf">
+                        <rect key="frame" x="8" y="8" width="23" height="18"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                        <color key="textColor" red="0.44705882349999998" green="0.49019607840000001" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mt5-fY-8NR" userLabel="SeparatorView">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="E0o-NT-Tn8"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y63-PV-R7X">
+                        <rect key="frame" x="41" y="8" width="271" height="27.5"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                        <color key="textColor" red="0.44705882349999998" green="0.49019607840000001" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Y63-PV-R7X" firstAttribute="leading" secondItem="314-Pu-XHf" secondAttribute="trailing" constant="10" id="8T4-Iq-fa6"/>
+                    <constraint firstAttribute="trailing" secondItem="Mt5-fY-8NR" secondAttribute="trailing" id="Eeg-M9-aOl"/>
+                    <constraint firstItem="314-Pu-XHf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Ixh-rB-frw"/>
+                    <constraint firstItem="Mt5-fY-8NR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NWI-b7-TWH"/>
+                    <constraint firstAttribute="bottom" secondItem="Mt5-fY-8NR" secondAttribute="bottom" id="WKS-yl-YSk"/>
+                    <constraint firstItem="314-Pu-XHf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Y0Q-qN-P6h"/>
+                    <constraint firstItem="Y63-PV-R7X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="YRi-RZ-5JU"/>
+                    <constraint firstItem="Y63-PV-R7X" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="f8s-J9-EBq"/>
+                    <constraint firstItem="314-Pu-XHf" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="ili-dz-yE2"/>
+                    <constraint firstItem="Y63-PV-R7X" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="qfY-hF-iCS"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="ili-dz-yE2"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblNumber" destination="314-Pu-XHf" id="trp-sN-TLN"/>
+                <outlet property="lblText" destination="Y63-PV-R7X" id="arn-tM-nOm"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
